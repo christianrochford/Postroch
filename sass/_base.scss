@@ -1,6 +1,6 @@
 html{
 	height: 100%;
-	background-color: $beige;
+	background-color: $background;
 }
 h1, h2, h3, h4, h5{
 	color: $dark-blue;
@@ -17,4 +17,15 @@ a{
     &:hover, &:focus, &:active{
     	color: $dark-blue;
     }
+}
+
+h1{
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.wrapper{
+	width: 100%;
+	float: left;
+	background-color: $background;
 }

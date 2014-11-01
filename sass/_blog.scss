@@ -1,0 +1,61 @@
+#banner{
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+	border-bottom: 2px solid $green;
+	h1{
+		color: $green;
+	}
+	p{
+		color: $green-bg;
+	}
+}
+#blog-articles{
+	padding: 0;
+	article{
+		width: 100%;
+		float: left;
+		#meta{
+			width: 140px;
+			height: 110px;
+			float: left;
+			border: 2px solid $green;
+			padding: 10px;
+			margin: 0 20px 20px 0;
+			display: table;
+			p{
+				color: $green;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+		.title-wrap{
+			width: 70%;
+			height: 110px;
+			float: left;
+			display: table;
+			h4{
+				color: $dark-grey;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+		.more{
+			color: $green;
+			text-align: center;
+			text-transform: uppercase;
+			word-wrap: break-word;
+			display: block;
+			width: 40px;
+			float: right;
+			height: 110px;
+			padding: 25px 10px;
+			border: 2px solid $green;
+			&:hover, &:focus, &:active{
+				color: $white;
+				background-color: $green;
+			}
+		}
+	}
+}

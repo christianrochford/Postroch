@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+h1,
+a,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+header {
+  display: block;
+}
+
+html {
+  height: 100%;
+  background-color: #e5c39e;
+}
+
+h1 {
+  color: #1b346c;
+}
+
+a {
+  color: #01abe9;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #1b346c;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+div,
+h1 {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #2795b6;
+}
+
+h1 {
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2125em;
+}
+
+h1 {
+  font-size: 2.125em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+@page {
+    margin: 0.5cm;
+}
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen {
+  div.switch input:not(:checked)+label {
+    opacity: 0;
+  }
+
+@-webkit-keyframes webkitSiblingBugfix {
+    from {
+      position: relative;
+    }
+
+    to {
+      position: relative;
+    }
+}
+}
+
+header {
+  width: 100%;
+  height: 94px;
+  float: left;
+  background-color: #e5c39e;
+}
+
+header #logo {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+header #logo:hover {
+  cursor: pointer;
+}
+
+header #logo .logo-brick {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+header #brick1,
+header #brick3,
+header #brick6,
+header #brick8,
+header #brick9,
+header #brick11,
+header #brick14,
+header #brick16 {
+  background-color: #1b346c;
+  z-index: 1;
+}
+
+header #brick1 {
+  z-index: 3;
+}
+
+header #brick2,
+header #brick4,
+header #brick5,
+header #brick7,
+header #brick10,
+header #brick12,
+header #brick13,
+header #brick15 {
+  background-color: #f54b1a;
+  z-index: 2;
+}
+
+header #brick1,
+header #brick2,
+header #brick3,
+header #brick4,
+header #brick5,
+header #brick6,
+header #brick7,
+header #brick8,
+header #brick9,
+header #brick10,
+header #brick11,
+header #brick12,
+header #brick13,
+header #brick14,
+header #brick15,
+header #brick16 {
+  top: 0px;
+  left: 0px;
+}
+
+header a h1 {
+  color: #1b346c;
+  font-size: 10px;
+  margin: 20px 20px 0;
+  display: none;
+}
+
+header #menu {
+  width: 100%;
+  height: 20px;
+  float: left;
+  position: relative;
+  top: -200px;
+  left: 95px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+header #menu #sky-blue,
+header #menu #dark-blue,
+header #menu #orange {
+  width: 33.3333%;
+  height: 20px;
+  float: left;
+  border-left: 1px solid #1b346c;
+}
+
+header #menu #sky-blue a,
+header #menu #dark-blue a,
+header #menu #orange a {
+  color: #1b346c;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 5px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header #menu #sky-blue a:hover,
+header #menu #dark-blue a:hover,
+header #menu #orange a:hover {
+  color: #f54b1a;
+}

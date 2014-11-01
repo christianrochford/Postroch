@@ -1,0 +1,19 @@
+.home{
+	position: relative;
+	.wrapper{
+		background-size: cover !important;
+		background-position: bottom center !important;
+		background-repeat: no-repeat !important;
+		width: 100%;
+		height: 100%;
+	}
+	#desktop-bg{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $white-bg;
+		z-index: 1;
+	}
+}

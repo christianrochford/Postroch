@@ -1,0 +1,54 @@
+#nav-wrap{
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	nav{
+		width: 180px;
+		margin: 0 auto;
+	}
+	ul{
+		width: 100%;
+		li{
+			width: 100%;
+			position: relative;
+			a{
+				display: block;
+				width: 100%;
+				height: 0;
+				margin: 0;
+				color: transparent;
+				font-size: 2em;
+				text-align: center;
+				text-transform: uppercase;
+				line-height: 2em;
+				transition: color 300ms ease-in-out;
+				&:hover + .underline, &:focus + .underline, &:active + .underline{
+					width: 100%;
+				}
+			}
+			.underline{
+				display: inline-block;
+				width: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				transition: all 300ms ease-in-out;
+			}
+		}
+	}
+}
+#nav-wrap.open{
+	height: 100%;
+	ul li a{
+		height: 60px;
+		color: $green;
+		margin: 20px 0;
+	}
+	.underline{
+		border-bottom: 2px solid $green;
+	}
+}

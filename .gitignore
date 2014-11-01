@@ -1,5 +1,17 @@
 .DS_Store
 
+dist/system/
+dist/themes/
+dist/uploads/
+dist/images/
+*.jpg
+*.jpeg
+*.mp3
+*.mp4
+*.ogg
+*.png
+*.gif
+
 # Images
 images/avatars/
 images/captchas/

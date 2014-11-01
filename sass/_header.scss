@@ -1,0 +1,97 @@
+header{
+	width: 100%;
+	height: 94px;
+	float: left;
+	position: relative;
+	z-index: 2;
+	#logo{
+		width: 55px;
+		height: 55px;
+		position: relative;
+		top: 20px;
+		left: 20px;
+		float: left;
+	}
+	#logo:hover{
+		cursor: pointer;
+	}
+	#logo .logo-brick{
+		width: 10px;
+		height: 10px;
+		position: absolute;
+	}
+	#brick1, #brick3, #brick6, #brick8, #brick9, #brick11, #brick14, #brick16{
+		background-color: $green;
+		z-index: 1;
+	}
+	#brick1{
+		z-index: 3;
+	}
+	#brick2, #brick4, #brick5, #brick7, #brick10, #brick12, #brick13, #brick15{
+		background-color: $green-bg;
+		z-index: 2;
+	}
+	#brick1, #brick2, , #brick3, #brick4, #brick5, #brick6, #brick7, #brick8, #brick9, #brick10, #brick11, #brick12, #brick13, #brick14, #brick15, #brick16{
+		top: 0px;
+		left: 0px;
+	}	
+	a h1{
+		color: $green;
+		font-size: 10px;
+		margin: 55px 0 0;
+		display: none;
+	}
+	#contact{
+		width: 160px;
+		float: left;
+		margin: 10px;
+		p{
+			color: $green;
+			font-size: 10px;
+			margin: 8px 20px 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			a{
+				color: $green;
+				text-transform: lowercase;
+			}
+		}
+	}
+	#menu{
+		width: 24px;
+		height: 30px;
+		float: right;
+		margin: 20px 30px;
+		position: relative;
+		z-index: 999;
+		&:hover, &:focus, &:active{
+			cursor: pointer;
+		}	
+		#top,#middle,#bottom{
+			width: 24px;
+			border-bottom: 2px solid $green;
+			margin: 6px 0;
+			-webkit-transition: all 300ms ease-in-out;
+		    -moz-transition: all 300ms ease-in-out;
+		    -o-transition: all 300ms ease-in-out;
+		    transition: all 300ms ease-in-out;
+		}
+	}
+	#menu.open{
+		#top{
+			transform: rotate(-45deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			margin-top: 12px;
+			width: 28px
+		}
+		#middle{
+			width: 0;
+		}
+		#bottom{
+			transform: rotate(45deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			margin-top: -16px;
+			width: 28px
+		}
+	}
+}

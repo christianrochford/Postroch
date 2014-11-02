@@ -10095,6 +10095,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
     $('#menu').click(function(){
       $(this).toggleClass('open');
       $('#nav-wrap').toggleClass('open');
+      $('#feed').toggleClass('close');
       var winH = $(window).height();
       var navH = $('nav').height();
       $('nav').css({marginTop: (winH-navH)/2 });

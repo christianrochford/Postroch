@@ -3,24 +3,29 @@ html{
 	background-color: $background;
 }
 h1, h2, h3, h4, h5{
-	color: $dark-blue;
+	color: $green;
 }
 p{
-	color: $black;
+	color: $grey;
 }
 a{
-	color: $sky-blue;
+	color: $green-bg;
 	-webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     &:hover, &:focus, &:active{
-    	color: $dark-blue;
+    	color: $green;
     }
 }
 
 h1{
 	font-size: 2em;
+	text-transform: uppercase;
+}
+
+h4{
+	font-size: 1.3em;
 	text-transform: uppercase;
 }
 

@@ -5,8 +5,8 @@ html{
 h1, h2, h3, h4, h5{
 	color: $green;
 }
-p{
-	color: $grey;
+p, ul li{
+	color: $black;
 }
 a{
 	color: $green-bg;

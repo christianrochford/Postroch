@@ -7,6 +7,23 @@
 		width: 100%;
 		height: 100%;
 		float: none;
+		position: relative;
+		.icon-arrow-down{
+			display: none;
+			color: $green-bg;
+			font-size: 2em;
+			position: absolute;
+			bottom: 20px;
+			text-align: center;
+			width: 100%;
+			z-index: 2;
+			&:hover, &:focus, &:active{
+				color: $green;
+			}
+			@include breakpoint(mobile-landscape){
+				display: block;
+			}
+		}
 	}
 	#desktop-bg{
 		width: 100%;
@@ -28,6 +45,9 @@
 		&:hover, &:focus, &:active{
 			background: $green;
     		height: 300px;
+    		@include breakpoint(mobile-landscape){
+    			height: auto;
+    		}
     		.title{
     			height: 0 !important;
 				margin: 0;
@@ -40,10 +60,19 @@
     	@include breakpoint(tablet){
     		height: 58px;
     	}
+    	@include breakpoint(mobile-landscape){
+    		position: relative;
+    		height: auto;
+    		background: $green;
+    	}
     	.latest{
     		width: 50%;
     		float: left;
     		padding: 0 20px;
+    		@include breakpoint(mobile-landscape){
+    			background: $green;
+    			width: 100%;
+    		}
     		.title{
     			height: 76px;
     			line-height: 76px;
@@ -53,6 +82,9 @@
     			@include breakpoint(tablet){
 					height: 58px;
     				line-height: 58px;
+    			}
+    			@include breakpoint(mobile-landscape){
+    				display: none;
     			}
     		}
     		&:first-child .title{
@@ -91,6 +123,6 @@
 	}
 	#feed.close{
 		transition: all 300ms ease-in-out;
-		height: 0;
+		bottom: -100px;
 	}
 }

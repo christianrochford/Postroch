@@ -1,0 +1,47 @@
+.about{
+	position: relative;
+	#profile{
+		background-size: cover !important;
+		background-position: bottom center !important;
+		background-repeat: no-repeat !important;
+		width: 180px;
+		height: 180px;
+		float: left;
+		position: relative;
+		transition: all 300ms ease-in-out;
+		margin: 20px;
+		top: 0;
+		@include breakpoint(tablet){
+			width: 90%;
+			height: 300px;
+			margin: 20px 5%;
+		}
+		@include breakpoint(mobile-landscape){
+			height: 180px;
+		}
+	}
+	#details{
+		width: 80%;
+		float: left;
+		background: $background;
+		@include breakpoint(tablet){
+			width: 90% !important;
+			margin: 20px 5%;
+		}
+		h1,h4{
+			color: $green;
+		}
+		.four{
+			width: 50%;
+			float: left;
+			min-height: 200px;
+			@include breakpoint(mobile-landscape){
+				width: 100%;
+				min-height: 0;
+			}
+		}
+		ul{
+			padding-left: 20px;
+		}
+	}
+}

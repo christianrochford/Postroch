@@ -10090,6 +10090,22 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
   logo.addEventListener('mouseover', logoHover, false);
   logo.addEventListener('mouseleave', original, false);
 
+  // Smooth Scroll
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
   $(document).ready(function(){
     // Menu
     $('#menu').click(function(){
@@ -10104,10 +10120,44 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
   $(window).ready(function(){
   	$('header h1'). fadeIn(1000);
+    // About
+    $('#details').css({width: $(window).width()-220});
+    setTimeout(function(){
+      $('#details').addClass('on');
+    },5000);
   });
 
   // Background
   $('.wrapper').height($(window).height());
+
+  // Feed
+  if($(window).width()>760){
+    $('#feed').css({height: 76});
+  } else {
+    $('#feed').css({height: 58});
+  }
+  $('#feed').hover(
+    function(){
+      $(this).css({height: $('#news').height()-56});
+    },
+    function(){
+      if($(window).width()>760){
+        $(this).css({height: 76});
+      } else {
+        $(this).css({height: 58});
+      }
+    }
+  );
+
+  // Blog
+  $('.title-wrap').hover(
+    function(){
+      $(this).parent().addClass('on');
+    },
+    function(){
+      $(this).parent().removeClass('on');
+    }
+  );
 
 }());
 
@@ -10118,4 +10168,24 @@ $(window).resize(function(){
   var winH = $(window).height();
   var navH = $('nav').height();
   $('nav').css({marginTop: (winH-navH)/2 });
+  // Feed
+  if($(window).width()>760){
+    $('#feed').css({height: 76});
+  } else {
+    $('#feed').css({height: 58});
+  }
+  $('#feed').hover(
+    function(){
+      $(this).css({height: $('#news').height()-56});
+    },
+    function(){
+      if($(window).width()>760){
+        $(this).css({height: 76});
+      } else {
+        $(this).css({height: 58});
+      }
+    }
+  );
+  // About
+  $('#details').css({width: $(window).width()-220});
 });

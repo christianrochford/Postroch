@@ -50,8 +50,8 @@
 		border-bottom: 2px solid $green;
 	}
 }
-.home.about #nav-wrap.open{
-	background: $background-opaque;
+.home.about #nav-wrap.open, .home.contact #nav-wrap.open, .home.work #nav-wrap.open{
+	background: $background;
 }
 .home #nav-wrap.open{
 	background: transparent;

@@ -1,0 +1,59 @@
+.contact{
+	h1{
+		color: $green;
+	}
+	p{
+		color: $grey;
+	}
+	form{
+		input[type="text"],input[type="email"]{
+			border: none;
+			box-shadow: none;
+			background: none;
+			border-bottom: 2px solid $green;
+			&:focus{
+				background: $green-bg;
+			}
+		}
+		textarea{
+			border: none;
+			box-shadow: none;
+			background: none;
+			border: 2px solid $green;
+			height: 200px;
+			&:focus{
+				background: $green-bg;
+			}
+		}
+		input[type="submit"]{
+			border: none;
+			box-shadow: none;
+			background: $green;
+			color: $white;
+			text-transform: uppercase;
+			text-align: center;
+			width: 120px;
+			height: 40px;
+			float: right;
+			transition: all 300ms ease-in-out;
+			&:hover,&:focus,&:active{
+				background: $background;
+				color: $green;
+				cursor: pointer;
+				border: 2px solid $green;
+			}
+		}
+		::-webkit-input-placeholder {
+		   color: $green-bg;
+		}
+		:-moz-placeholder {
+		   color: $green-bg;  
+		}
+		::-moz-placeholder {
+		   color: $green-bg; 
+		}
+		:-ms-input-placeholder {  
+		   color: $green-bg;  
+		}
+	}
+}

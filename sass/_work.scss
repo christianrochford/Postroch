@@ -1,0 +1,57 @@
+.work{
+	.twelve{
+		background: $background;
+		h1{
+			color: $green;
+		}
+		p{
+			color: $grey;
+			margin: 20px auto 60px;
+			@include breakpoint(mobile-landscape){
+				margin: 20px auto 40px;
+			}
+		}
+		.project{
+			width: 100%;
+			margin: 40px auto 80px;
+			@include breakpoint(mobile-landscape){
+				margin: 20px auto 40px;
+			}
+			figure{
+				width: 100%;
+				position: relative;
+				&:hover,&:focus,&:active{
+					.overbox{
+						background: transparent;
+					}
+				}
+				img{
+					width: 100%;
+					margin: 0 0 20px;
+					@include breakpoint(mobile-landscape){
+						margin: 0;
+					}
+				}
+				.overbox{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: $background-opaque;
+					transition: all 300ms ease-in-out;
+					@include breakpoint(mobile-landscape){
+						background: transparent;
+					}
+				}
+			}
+			.title{
+				color: $green;
+				margin: 20px 0;
+			}
+			.description{
+				color: $grey;
+			}
+		}
+	}
+}

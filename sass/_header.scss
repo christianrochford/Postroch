@@ -31,13 +31,14 @@ header{
 		background-color: $green-bg;
 		z-index: 2;
 	}
-	#brick1, #brick2, , #brick3, #brick4, #brick5, #brick6, #brick7, #brick8, #brick9, #brick10, #brick11, #brick12, #brick13, #brick14, #brick15, #brick16{
+	#brick1, #brick2, #brick3, #brick4, #brick5, #brick6, #brick7, #brick8, #brick9, #brick10, #brick11, #brick12, #brick13, #brick14, #brick15, #brick16{
 		top: 0px;
 		left: 0px;
-	}	
+	}
 	a h1{
 		color: $green;
 		font-size: 10px;
+		font-family: Helvetica,Arial;
 		margin: 55px 0 0;
 		display: none;
 	}
@@ -48,6 +49,7 @@ header{
 		p{
 			color: $green;
 			font-size: 10px;
+			font-family: Helvetica,Arial;
 			margin: 8px 20px 0;
 			text-transform: uppercase;
 			font-weight: bold;

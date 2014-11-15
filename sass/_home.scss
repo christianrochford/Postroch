@@ -1,5 +1,8 @@
 .home{
 	position: relative;
+    #logo, #contact{
+        display: none;
+    }
 	.wrapper{
 		background-size: cover !important;
 		background-position: bottom center !important;

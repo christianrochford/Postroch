@@ -9,36 +9,43 @@
 	z-index: -1;
 	transition: all 300ms ease-in-out;
 	nav{
-		width: 180px;
+		width: 220px;
 		margin: 0 auto;
+		@include breakpoint(mobile-landscape){
+			width: 180px;
+		}
 	}
 	ul{
-		width: 100%;
+		width: 220px;
+		@include breakpoint(mobile-landscape){
+			width: 180px;
+		}
 		li{
-			width: 100%;
+			width: 220px;
 			position: relative;
+			@include breakpoint(mobile-landscape){
+				width: 180px;
+			}
 			a{
 				display: block;
-				width: 100%;
+				width: 220px;
 				height: 60px;
 				margin: 20px 0;
 				color: $green;
 				font-size: 2em;
+				font-family: 'latoregular',Helvetica,Arial,sans-serif;
 				text-align: center;
 				text-transform: uppercase;
 				line-height: 2em;
-				transition: color 300ms ease-in-out;
-				&:hover + .underline, &:focus + .underline, &:active + .underline{
-					width: 100%;
-				}
-			}
-			.underline{
-				display: inline-block;
-				width: 0;
-				position: absolute;
-				bottom: 0;
-				left: 0;
+				letter-spacing: 0em;
 				transition: all 300ms ease-in-out;
+				&:hover, &:focus, &:active{
+					letter-spacing: 0.3em;
+				}
+				@include breakpoint(mobile-landscape){
+					width: 180px;
+					font-size: 1.6em;
+				}
 			}
 		}
 	}
@@ -46,13 +53,4 @@
 #nav-wrap.open{
 	z-index: 1;
 	background: $background;
-	.underline{
-		border-bottom: 2px solid $green;
-	}
-}
-.home.about #nav-wrap.open, .home.contact #nav-wrap.open, .home.work #nav-wrap.open{
-	background: $background;
-}
-.home #nav-wrap.open{
-	background: transparent;
 }

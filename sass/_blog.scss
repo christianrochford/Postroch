@@ -1,6 +1,6 @@
 #banner{
 	float: left;
-	margin: 20px 0;
+	margin: 20px 0 0;
 	text-align: center;
 	border-bottom: 2px solid $green;
 	h1{
@@ -8,6 +8,7 @@
 	}
 	p{
 		color: $green-bg;
+		margin-bottom: 40px;
 	}
 }
 #banner.detail{
@@ -22,13 +23,19 @@
 		.tag{
 			float: right;
 			color: $green-bg;
+			letter-spacing: 0em;
+			position: relative;
+			right: 0;
 			&:hover, &:focus, &:active{
-				color: $green;
+				letter-spacing: 0.1em;
+				right: -4px;
 			}
 		}
 	}
 }
 #blog-articles{
+	background: $green;
+	padding-top: 20px;
 	article{
 		width: 100%;
 		height: auto;
@@ -38,7 +45,7 @@
 			width: 140px;
 			height: 110px;
 			float: left;
-			border: 2px solid $green-bg;
+			border: 2px solid $white;
 			padding: 10px;
 			margin: 0 20px 20px 0;
 			display: table;
@@ -47,15 +54,16 @@
 				display: none;
 			}
 			p{
-				color: $green-bg;
+				color: $white;
 				display: table-cell;
 				vertical-align: middle;
 				text-align: center;
 				transition: all 300ms ease-in-out;
 				a{
-					color: $green-bg;
+					color: $white;
+					letter-spacing: 0em;
 					&:hover, &:focus, &:active{
-						color: $green;
+						letter-spacing: 0.1em;
 					}
 				}
 			}
@@ -77,14 +85,11 @@
 					margin: 20px 0;
 				}
 				a{
-					color: $dark-grey;
+					color: $white;
 					display: table-cell;
 					vertical-align: middle;
 					@include breakpoint(max-width, 570px){
 						display: inline;
-					}
-					&:hover, &:focus, &:active{
-						color: $green;
 					}
 				}
 			}
@@ -115,7 +120,7 @@
 					bottom: 24px;
 				}
 				&:hover, &:focus, &:active{
-					color: $green;
+					color: $white;
 				}
 			}	
 			.underline{
@@ -124,7 +129,7 @@
 				position: absolute;
 				left: 0;
 				bottom: 0;
-				border-bottom: 2px solid $green;
+				border-bottom: 2px solid $white;
 				transition: all 300ms ease-in-out;
 				@include breakpoint(max-width, 570px){
 					width: 100%;
@@ -134,21 +139,9 @@
 		}
 	}
 	article.on{
-		.meta{
-			border: 2px solid $green;
-			p{
-				color: $green;
-				a{
-					color: $green;
-				}
-			}
-		}
 		.title-wrap{
-			h4 a{
-				color: $green;
-			}
 			.more{
-				color: $green;
+				color: $white;
 			}
 			.underline{
 				width: 100%;

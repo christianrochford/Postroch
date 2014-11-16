@@ -1,9 +1,27 @@
 .contact{
-	h1{
-		color: $green;
+	background: $background;
+	.row{
+		background: $background;
 	}
-	p{
+	h1{
+		padding-top: 94px;
+		color: $green;
+		@include breakpoint(mobile-landscape){
+			text-align: center;
+			font-size: 1.4em;
+		}
+		@include breakpoint(mobile){
+			margin-top: 40px;
+		}
+	}
+	h1+p{
 		color: $grey;
+		@include breakpoint(mobile-landscape){
+			text-align: center;
+		}
+		@include breakpoint(mobile){
+			margin-bottom: 60px;
+		}
 	}
 	form{
 		input[type="text"],input[type="email"]{
@@ -38,6 +56,9 @@
 			height: 40px;
 			float: right;
 			transition: all 300ms ease-in-out;
+			-webkit-appearance: none;
+    		-webkit-border-radius:0; 
+    		border-radius:0;
 			&:hover,&:focus,&:active{
 				background: $background;
 				color: $green;
@@ -47,19 +68,19 @@
 		}
 		::-webkit-input-placeholder {
 		   color: $green-bg;
-		   font-family: 'vollkornregular','Times New Roman',Serif;
+		   font-family: 'latoregular',Helvetica,Arial,sans-serif;
 		}
 		:-moz-placeholder {
 		   color: $green-bg;  
-		   font-family: 'vollkornregular','Times New Roman',Serif;
+		   font-family: 'latoregular',Helvetica,Arial,sans-serif;
 		}
 		::-moz-placeholder {
 		   color: $green-bg; 
-		   font-family: 'vollkornregular','Times New Roman',Serif;
+		   font-family: 'latoregular',Helvetica,Arial,sans-serif;
 		}
 		:-ms-input-placeholder {  
 		   color: $green-bg;  
-		   font-family: 'vollkornregular','Times New Roman',Serif;
+		   font-family: 'latoregular',Helvetica,Arial,sans-serif;
 		}
 	}
 }

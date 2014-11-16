@@ -1,157 +1,175 @@
-#banner{
-	float: left;
-	margin: 20px 0 0;
-	text-align: center;
-	border-bottom: 2px solid $green;
-	h1{
-		color: $green;
+.blog{
+	#main-content{
+		padding-top: 94px;
 	}
-	p{
-		color: $green-bg;
-		margin-bottom: 40px;
-	}
-}
-#banner.detail{
-	#meta{
-		width: 100%;
-		.posted{
-			width: 200px;
-			float: left;
-			margin: 0;
-			text-align: left;
-		}
-		.tag{
-			float: right;
-			color: $green-bg;
-			letter-spacing: 0em;
-			position: relative;
-			right: 0;
-			&:hover, &:focus, &:active{
-				letter-spacing: 0.1em;
-				right: -4px;
-			}
-		}
-	}
-}
-#blog-articles{
-	background: $green;
-	padding-top: 20px;
-	article{
-		width: 100%;
-		height: auto;
+	#banner{
+		background: $background;
 		float: left;
-		position: relative;
-		.meta{
-			width: 140px;
-			height: 110px;
-			float: left;
-			border: 2px solid $white;
-			padding: 10px;
-			margin: 0 20px 20px 0;
-			display: table;
-			transition: all 300ms ease-in-out;
-			@include breakpoint(max-width, 570px){
-				display: none;
+		margin: 20px 0;
+		text-align: center;
+		border-bottom: 2px solid $green;
+		h1{
+			color: $green;
+			@include breakpoint(mobile-landscape){
+				font-size: 1.4em;
 			}
-			p{
-				color: $white;
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-				transition: all 300ms ease-in-out;
-				a{
-					color: $white;
-					letter-spacing: 0em;
-					&:hover, &:focus, &:active{
-						letter-spacing: 0.1em;
-					}
+		}
+		p{
+			color: $green-bg;
+		}
+	}
+	#banner.detail{
+		#meta{
+			width: 100%;
+			.posted{
+				width: 200px;
+				float: left;
+				margin: 0;
+				text-align: left;
+			}
+			.tag{
+				float: right;
+				color: $green-bg;
+				&:hover, &:focus, &:active{
+					color: $green;
 				}
 			}
 		}
-		.title-wrap{
+	}
+	#blog-articles{
+		background: $background;
+		article{
+			width: 100%;
+			height: auto;
 			float: left;
-			@include breakpoint(desktop){
-				width: 70%;
-			}
-			@include breakpoint(max-width, 570px){
-				width: 100%;
-			}
-			h4{
-				display: table;
+			position: relative;
+			.meta{
+				width: 140px;
 				height: 110px;
+				float: left;
+				border: 2px solid $green-bg;
+				padding: 10px;
+				margin: 0 20px 20px 0;
+				display: table;
+				transition: all 300ms ease-in-out;
 				@include breakpoint(max-width, 570px){
-					display: inline-block;
-					height: auto;
-					margin: 20px 0;
+					display: none;
 				}
-				a{
-					color: $white;
+				p{
+					color: $green-bg;
 					display: table-cell;
 					vertical-align: middle;
-					@include breakpoint(max-width, 570px){
-						display: inline;
+					text-align: center;
+					transition: all 300ms ease-in-out;
+					a{
+						color: $green-bg;
+						&:hover, &:focus, &:active{
+							color: $green;
+						}
 					}
 				}
 			}
-			.meta-mobile{
-				display: none;
-				color: $green-bg;
-				font-size: 0.7em;
-				margin-bottom: 22px;
-				@include breakpoint(max-width, 570px){
-					display: block;
+			.title-wrap{
+				float: left;
+				@include breakpoint(desktop){
+					width: 70%;
 				}
-				a{
+				@include breakpoint(max-width, 570px){
+					width: 100%;
+				}
+				h4{
+					display: table;
+					height: 110px;
+					@include breakpoint(max-width, 570px){
+						display: inline-block;
+						height: auto;
+						margin: 20px 0;
+					}
+					a{
+						color: $dark-grey;
+						display: table-cell;
+						vertical-align: middle;
+						@include breakpoint(max-width, 570px){
+							display: inline;
+						}
+						&:hover, &:focus, &:active{
+							color: $green;
+						}
+					}
+				}
+				.meta-mobile{
+					display: none;
 					color: $green-bg;
+					font-size: 0.7em;
+					margin-bottom: 22px;
+					@include breakpoint(max-width, 570px){
+						display: block;
+					}
+					a{
+						color: $green-bg;
+						&:hover, &:focus, &:active{
+							color: $green;
+						}
+					}
+				}
+				.more{
+					color: transparent;
+					text-align: center;
+					display: block;
+					position: absolute;
+					right: 0px;
+					bottom: 30px;
+					@include breakpoint(max-width, 570px){
+						color: $green-bg;
+						bottom: 24px;
+					}
 					&:hover, &:focus, &:active{
+						color: $green;
+					}
+				}	
+				.underline{
+					display: block;
+					width: 0;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					border-bottom: 2px solid $green;
+					transition: all 300ms ease-in-out;
+					@include breakpoint(max-width, 570px){
+						width: 100%;
+						border-bottom: 2px solid $green-bg;
+					}
+				}
+			}
+		}
+		article.on{
+			.meta{
+				border: 2px solid $green;
+				p{
+					color: $green;
+					a{
 						color: $green;
 					}
 				}
 			}
-			.more{
-				color: transparent;
-				text-align: center;
-				display: block;
-				position: absolute;
-				right: 0px;
-				bottom: 30px;
-				@include breakpoint(max-width, 570px){
-					color: $green-bg;
-					bottom: 24px;
+			.title-wrap{
+				h4 a{
+					color: $green;
 				}
-				&:hover, &:focus, &:active{
-					color: $white;
+				.more{
+					color: $green;
 				}
-			}	
-			.underline{
-				display: block;
-				width: 0;
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				border-bottom: 2px solid $white;
-				transition: all 300ms ease-in-out;
-				@include breakpoint(max-width, 570px){
+				.underline{
 					width: 100%;
-					border-bottom: 2px solid $green-bg;
 				}
 			}
 		}
 	}
-	article.on{
-		.title-wrap{
-			.more{
-				color: $white;
-			}
-			.underline{
-				width: 100%;
-			}
+	#blog-content{
+		background: $background;
+		margin: 15px 0 20px;
+		p{
+			color: $grey;
 		}
-	}
-}
-#blog-content{
-	margin: 20px 0;
-	p{
-		color: $dark-grey;
 	}
 }

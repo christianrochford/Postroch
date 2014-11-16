@@ -1,5 +1,10 @@
 .home{
 	position: relative;
+    header{
+        background: transparent;
+        box-shadow: none;
+        position: relative;
+    }
     #logo, #contact{
         display: none;
     }
@@ -128,4 +133,7 @@
 		transition: all 300ms ease-in-out;
 		bottom: -100px;
 	}
+}
+.home.menu-open{
+
 }

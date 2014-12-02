@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Menu
   $('#menu').click(function(){
     $(this).toggleClass('open');

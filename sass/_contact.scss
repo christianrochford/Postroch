@@ -24,6 +24,11 @@
 		}
 	}
 	form{
+		margin: 40px 0;
+		overflow: hidden;
+		@include breakpoint(mobile-landscape){
+			margin: 20px 0;
+		}
 		input[type="text"],input[type="email"]{
 			border: none;
 			box-shadow: none;

@@ -16,6 +16,7 @@
 		}
 		p{
 			color: $green-bg;
+			margin: 40px 0;
 		}
 	}
 	#banner.detail{
@@ -38,6 +39,10 @@
 	}
 	#blog-articles{
 		background: $background;
+		margin: 40px 0;
+		@include breakpoint(mobile-landscape){
+			margin: 20px 0 40px;
+		}
 		article{
 			width: 100%;
 			height: auto;
@@ -71,9 +76,7 @@
 			}
 			.title-wrap{
 				float: left;
-				@include breakpoint(desktop){
-					width: 70%;
-				}
+				width: 70%;
 				@include breakpoint(max-width, 570px){
 					width: 100%;
 				}
@@ -168,8 +171,36 @@
 	#blog-content{
 		background: $background;
 		margin: 15px 0 20px;
+		h4{
+			color: $green;
+			font-size: 1.4em;
+		}
+		ul,ol{
+			margin-left: 20px;
+			list-style-type: none;
+			li{
+				padding-left: 1em; 
+    			text-indent: -.7em;
+    			color: $grey;
+    			&:before{
+    				content: "• ";
+			    	color: $green;
+    			}
+			}
+		}
 		p{
 			color: $grey;
+			strong{
+				font-weight: bold;
+				color: $green;
+			}
+		}
+		pre{
+			background: $green-bg;
+			color: $white;
+			margin: 20px 0;
+			padding: 20px;
+			overflow: scroll;
 		}
 	}
 }

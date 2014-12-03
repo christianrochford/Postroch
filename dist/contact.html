@@ -1,0 +1,382 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Postroch</title>
+<link rel="stylesheet" href="css/postroch.css">
+<script src="../js/modernizr/modernizr.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body class="contact">
+	<div class="wrapper">
+		<header>
+			<div id="logo">
+				<div class="logo-brick" id="brick1"></div>
+				<div class="logo-brick" id="brick2"></div>
+				<div class="logo-brick" id="brick3"></div>
+				<div class="logo-brick" id="brick4"></div>
+				<div class="logo-brick" id="brick5"></div>
+				<div class="logo-brick" id="brick6"></div>
+				<div class="logo-brick" id="brick7"></div>
+				<div class="logo-brick" id="brick8"></div>
+				<div class="logo-brick" id="brick9"></div>
+				<div class="logo-brick" id="brick10"></div>
+				<div class="logo-brick" id="brick11"></div>
+				<div class="logo-brick" id="brick12"></div>
+				<div class="logo-brick" id="brick13"></div>
+				<div class="logo-brick" id="brick14"></div>
+				<div class="logo-brick" id="brick15"></div>
+				<div class="logo-brick" id="brick16"></div>
+				<a href="index.html"><h1>POSTROCH</h1></a>
+			</div>
+			<div id="contact">
+				<p>Digital Development<br>Web Design<br><a href="mailto:postroch@gmail.com" class="icon-mail" aria-hidden="true"> postroch@gmail.com</a></p>
+			</div>
+			<div id="menu">
+				<div id="top"></div>
+				<div id="middle"></div>
+				<div id="bottom"></div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="columns twelve">
+				<h1 class="title">Contact</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, optio placeat error eos saepe corporis odit labore doloribus mollitia sunt.</p>
+				<form action="">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
+					<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+    <footer>
+      <div id="spotify">
+        <dl>
+          <dt>Currently listening to:</dt>
+          <dd>Ought - Today more than any other day</dd>
+        </dl>
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="social-icon"><a href="#" class="icon-mail" aria-hidden="true"></a></li>
+          <li class="social-icon"><a href="#" class="icon-github" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </footer>
+	</div>
+	<div id="nav-wrap">
+		<nav>
+			<ul>
+				<li class="current"><a href="index.html">Home</a><span class="underline"></span></li>
+				<li><a href="work.html">Work</a><span class="underline"></span></li>
+				<li><a href="about.html">About</a><span class="underline"></span></li>
+				<li><a href="contact.html">Contact</a><span class="underline"></span></li>
+				<li><a href="blog.html">Blog</a><span class="underline"></span></li>
+			</ul>
+		</nav>
+	</div>
+<script src="js/postroch.min.js"></script>
+<script>
+(function() {
+
+  logo = document.getElementById('logo');
+  brick1 = document.getElementById('brick1');
+  brick2 = document.getElementById('brick2');
+  brick3 = document.getElementById('brick3');
+  brick4 = document.getElementById('brick4');
+  brick5 = document.getElementById('brick5');
+  brick6 = document.getElementById('brick6');
+  brick7 = document.getElementById('brick7');
+  brick8 = document.getElementById('brick8');
+  brick9 = document.getElementById('brick9');
+  brick10 = document.getElementById('brick10');
+  brick11 = document.getElementById('brick11');
+  brick12 = document.getElementById('brick12');
+  brick13 = document.getElementById('brick13');
+  brick14 = document.getElementById('brick14');
+  brick15 = document.getElementById('brick15');
+  brick16 = document.getElementById('brick16');
+
+  function original() {
+    var tl = new TimelineMax();
+    tl.to(brick1, 0.1, {
+      css: {
+        top: 0,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick2, 0.1, {
+      css: {
+        top: 0,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick3, 0.1, {
+      css: {
+        top: 0,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick4, 0.1, {
+      css: {
+        top: 0,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick5, 0.1, {
+      css: {
+        top: 15,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick6, 0.1, {
+      css: {
+        top: 15,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick7, 0.1, {
+      css: {
+        top: 15,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick8, 0.1, {
+      css: {
+        top: 15,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick9, 0.1, {
+      css: {
+        top: 30,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick10, 0.1, {
+      css: {
+        top: 30,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick11, 0.1, {
+      css: {
+        top: 30,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick12, 0.1, {
+      css: {
+        top: 30,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick13, 0.1, {
+      css: {
+        top: 45,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick14, 0.1, {
+      css: {
+        top: 45,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick15, 0.1, {
+      css: {
+        top: 45,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    tl.to(brick16, 0.1, {
+      css: {
+        top: 45,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+  }
+
+  function logoHover() {
+    var hover = new TimelineMax();
+    hover.to(brick1, 0.1, {
+      css: {
+        top: 45,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick2, 0.1, {
+      css: {
+        top: 45,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick3, 0.1, {
+      css: {
+        top: 45,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick4, 0.1, {
+      css: {
+        top: 45,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick5, 0.1, {
+      css: {
+        top: 30,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick6, 0.1, {
+      css: {
+        top: 30,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick7, 0.1, {
+      css: {
+        top: 30,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick8, 0.1, {
+      css: {
+        top: 30,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick9, 0.1, {
+      css: {
+        top: 15,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick10, 0.1, {
+      css: {
+        top: 15,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick11, 0.1, {
+      css: {
+        top: 15,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick12, 0.1, {
+      css: {
+        top: 15,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick13, 0.1, {
+      css: {
+        top: 0,
+        left: 45,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick14, 0.1, {
+      css: {
+        top: 0,
+        left: 30,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick15, 0.1, {
+      css: {
+        top: 0,
+        left: 15,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+    hover.to(brick16, 0.1, {
+      css: {
+        top: 0,
+        left: 0,
+        rotation: '180'
+      },
+      ease: Expo.easeOut
+    });
+  }
+
+  original();
+  logo.addEventListener('mouseover', logoHover, false);
+  logo.addEventListener('mouseleave', original, false);
+
+}());
+</script>
+</body>
+</html>

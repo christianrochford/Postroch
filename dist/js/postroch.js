@@ -9873,6 +9873,10 @@ $(window).ready(function(){
   $('header h1').fadeIn(1000);
   $('#brand h1, #brand p').delay(2000).fadeIn(1000);
 
+  // Content
+  var winH = $(window).height();
+  $('#main-content').css({minHeight: (winH -100)});
+
 });
 
 $(window).resize(function(){
